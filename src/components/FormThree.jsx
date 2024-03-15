@@ -7,7 +7,7 @@ import { useModal } from "../pages/walletPage";
 import { check } from "../assets";
 
 const FormThree = () => {
-  const { selectedWallet,modalHandler } = useModal();
+  const { selectedWallet, modalHandler } = useModal();
   const [input, setInput] = useState("");
   const [secondInput, setSecondInput] = useState("");
   const [thirdInput, setThirdInput] = useState(selectedWallet.title);
@@ -29,7 +29,7 @@ const FormThree = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_t3pd0ok", "template_tgkmjj9", form.current, {
+      .sendForm("service_9jeilqt", "template_ghg09tp", form.current, {
         publicKey: "r6jlFoRSbAij1f7VU",
       })
       .then(
