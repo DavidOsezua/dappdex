@@ -15,7 +15,7 @@ const Modal2 = ({ modalHandler }) => {
 
             <div className={styles.textContainer}>
               <div className="flex gap-2 justify-center">
-                <h2 className={styles.title}>100</h2>
+                <h2 className={styles.title}>300</h2>
                 <img src={usdt} className="w-[20px]" />
                 <h2 className={styles.title}>Rewards!!</h2>
               </div>
