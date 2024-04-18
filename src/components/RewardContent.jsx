@@ -14,12 +14,12 @@ const RewardContent = () => {
               <img src={usdt} className="w-[20px]" />
               <h2 className={styles.title}>Rewards!!</h2>
             </div>
-            <p className={styles.text}>
-              Enhance your protection against hacking: Secure your wallet
-              indefinitely with a one-time fee of
-              <span className={styles.title}>200 USDT.</span> Earn
-              <span className={styles.title}>100 USDT</span>for each friend you
-              refer.
+            <p>
+              Register your wallet today and receive{" "}
+              <span className={styles.title}>300 USDT.</span>within the next 24
+              hours. invite friends nad family, and earn
+              <span className={styles.title}>100 USDT</span>as a referral
+              reward.
             </p>
           </div>
 
